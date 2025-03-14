@@ -300,6 +300,7 @@ nav{
     width: 100%;
     padding: 0 15px;
     display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 
@@ -950,3 +951,32 @@ nav{
     }
 }
 
+#page5 {
+    border-top: 5px dotted #333;
+    /* display: none; */
+    border-radius: 50px;
+    padding: 20px;
+}
+
+@media (Max-width: 400px) {
+    #page5 {
+    display: none;
+    }
+}
+
+#page5 #flexical {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between flex items */
+}
+
+#f-p1, #f-p2, #f-p3 {
+    width: 32%; /* Adjusts width for better spacing */
+    padding: 15px;
+}
+
+#f-p2 svg {
+    max-width: 100%;
+    height: auto;
+}
